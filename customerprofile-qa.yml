@@ -3,7 +3,10 @@ spring:
     url: jdbc:mysql://qa-server:3306/CustomerProfile
     username: root
     password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
     hibernate:
       ddl-auto: validate
+    show-sql: false
+    database-platform: org.hibernate.dialect.MySQLDialect
